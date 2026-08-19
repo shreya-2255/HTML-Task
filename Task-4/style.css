@@ -1,0 +1,139 @@
+#home {
+    margin: 0;
+    background-image: url("Bg_image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3e3025;
+}
+#remain {
+    background-color: #f3e4c8;
+}
+h1 {
+    margin: 0;
+    padding: 25px;
+    background-color: rgba(62, 48, 37, 0.85);
+    color: #f8e8c8;
+    font-size: 42px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+nav {
+    background-color: rgba(248, 232, 200, 0.92);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #8b6f47;
+}
+
+nav a {
+    color: #3e3025;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8b5e34;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #8b6f47;
+    margin: 0;
+}
+marquee {
+    color:rgb(38, 16, 1);
+    padding: 8px;
+}
+
+marquee h3 {
+    margin: 5px;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+img {
+    width: 450px;
+    height: 350px;
+    /* object-fit: cover; */
+    margin-top: 30px;
+    border: 6px solid #f3e4c8;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    color: rgb(38, 16, 1);;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+h2 + p {
+    color: rgb(38, 16, 1);;
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+p {
+    color: rgb(38, 16, 1);;
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+button {
+    background-color: #5a3e2b;
+    border: 1px solid #8b6f47;
+    padding: 12px 22px;
+    margin: 15px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button {
+    color: #f8e8c8;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#anchor1 {
+    color: #f8e8c8;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8b6f47;
+    transform: translateY(-2px);
+}
+
+table {
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: beige;
+}
+
+td {
+    background-color: #fff8e7;
+}
