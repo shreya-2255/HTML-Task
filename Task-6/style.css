@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+  --forest:#173b2b;
+  --green:#2f6149;
+  --sage:#7e9a84;
+  --cream:#f7f4ec;
+  --beige:#e9dfce;
+  --gold:#b99a62;
+  --dark:#17211b;
+  --muted:#6d756f;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:var(--dark);background:#fff;line-height:1.7}
+h1,h2,h3,h4,h5{font-family:'Playfair Display',serif}
+a{text-decoration:none}
+.navbar{background:rgba(23,59,43,.96);padding:16px 0;transition:.3s}
+.navbar-brand{font-family:'Playfair Display',serif;font-size:1.8rem;letter-spacing:2px;color:#fff!important}
+.navbar-brand small{font:9px Poppins,sans-serif;letter-spacing:3px;display:block;color:#d9c89e}
+.nav-link{color:#fff!important;font-size:.82rem;letter-spacing:.5px;margin:0 7px}
+.nav-link:hover,.nav-link.active{color:#d9c89e!important}
+.btn-evergreen{background:var(--gold);color:#fff;border:1px solid var(--gold);padding:12px 25px;border-radius:30px;font-weight:500;transition:.3s}
+.btn-evergreen:hover{background:transparent;color:var(--gold);transform:translateY(-2px)}
+.btn-outline-evergreen{border:1px solid #fff;color:#fff;padding:12px 25px;border-radius:30px;transition:.3s}
+.btn-outline-evergreen:hover{background:#fff;color:var(--forest)}
+.hero{min-height:92vh;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;color:#fff}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,28,19,.72),rgba(8,28,19,.2))}
+.hero-content{position:relative;z-index:2;max-width:760px}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:.72rem;color:var(--gold);font-weight:600}
+.hero h1{font-size:clamp(3.4rem,8vw,7rem);line-height:.95;margin:18px 0}
+.hero p{max-width:650px;color:#f2f2f2}
+.page-hero{min-height:55vh;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;color:#fff}
+.page-hero:before{content:"";position:absolute;inset:0;background:rgba(10,35,24,.58)}
+.page-hero .container{position:relative;z-index:2}
+.page-hero h1{font-size:clamp(3rem,6vw,5rem)}
+section{padding:95px 0}
+.section-title{text-align:center;max-width:720px;margin:0 auto 50px}
+.section-title h2{font-size:clamp(2.2rem,4vw,3.5rem);color:var(--forest);margin:12px 0}
+.section-title p{color:var(--muted)}
+.image-card{overflow:hidden;border-radius:18px;position:relative}
+.image-card img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.image-card:hover img{transform:scale(1.06)}
+.room-card,.offer-card,.activity-card,.feature-card{border:0;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 12px 35px rgba(25,50,37,.09);transition:.35s;height:100%}
+.room-card:hover,.offer-card:hover,.activity-card:hover,.feature-card:hover{transform:translateY(-8px);box-shadow:0 20px 45px rgba(25,50,37,.15)}
+.room-card img{height:260px;object-fit:cover}
+.offer-card img{height:250px;object-fit:cover}
+.card-body{padding:25px}
+.price{color:var(--forest);font-weight:600;font-size:1.15rem}
+.text-gold{color:var(--gold)}
+.soft-section{background:var(--cream)}
+.stats{background:var(--forest);color:#fff}
+.stat h3{font-size:2.7rem;color:#e0c995;margin:0}
+.stat p{margin:0;color:#cbd6ce;font-size:.85rem}
+.icon-box{width:58px;height:58px;border-radius:50%;background:#edf2ed;color:var(--forest);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:18px}
+.experience-card{min-height:330px;border-radius:20px;overflow:hidden;position:relative;color:#fff;background-size:cover;background-position:center}
+.experience-card:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(0,0,0,.78))}
+.experience-card .content{position:absolute;bottom:25px;left:25px;right:25px;z-index:2}
+.timeline{border-left:2px solid var(--gold);padding-left:35px}
+.timeline-item{position:relative;margin-bottom:35px}
+.timeline-item:before{content:"";position:absolute;left:-44px;top:7px;width:15px;height:15px;background:var(--gold);border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px var(--gold)}
+.timeline-time{color:var(--gold);font-weight:600}
+.testimonial{background:var(--cream);border-radius:18px;padding:35px;height:100%}
+.gallery-item{height:280px;border-radius:15px;overflow:hidden;position:relative}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-overlay{position:absolute;inset:0;background:rgba(23,59,43,.55);opacity:0;transition:.3s;display:flex;align-items:end;padding:20px;color:#fff}
+.gallery-item:hover .gallery-overlay{opacity:1}
+.cta{background:linear-gradient(90deg,rgba(18,52,36,.94),rgba(18,52,36,.7)),url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff}
+.form-control,.form-select{padding:13px 15px;border:1px solid #dce2dc;border-radius:10px}
+.form-control:focus,.form-select:focus{border-color:var(--sage);box-shadow:0 0 0 .2rem rgba(47,97,73,.12)}
+.booking-box{background:#fff;border-radius:20px;padding:30px;box-shadow:0 15px 45px rgba(0,0,0,.08)}
+.badge-soft{background:#edf2ed;color:var(--forest);font-weight:500;padding:7px 12px;border-radius:30px}
+.footer{background:#10271c;color:#c9d3cc;padding:65px 0 25px}
+.footer h5{color:#fff;margin-bottom:20px}
+.footer a{color:#c9d3cc;display:block;margin-bottom:8px;font-size:.9rem}
+.footer a:hover{color:#d9c89e}
+.social a{display:inline-flex;width:38px;height:38px;border:1px solid #496052;border-radius:50%;align-items:center;justify-content:center;margin-right:7px}
+.map-placeholder{min-height:360px;background:linear-gradient(rgba(23,59,43,.75),rgba(23,59,43,.75)),url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80') center/cover;border-radius:20px;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center}
+.table-clean td{padding:12px 0;border-bottom:1px solid #e9eee9}
+@media(max-width:991px){
+ .navbar{padding:12px 0}
+ .navbar-collapse{padding-top:15px}
+ .hero{min-height:82vh}
+ section{padding:70px 0}
+}
+@media(max-width:575px){
+ .hero h1{font-size:3.5rem}
+ .page-hero{min-height:45vh}
+ .gallery-item{height:230px}
+}
